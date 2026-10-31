@@ -1,0 +1,19 @@
+[project]
+name = "oversight-audit"
+version = "0.1.0"
+description = "Seeded-error tests of whether human and AI review of AI outputs actually catches mistakes"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+dependencies = []
+
+[project.optional-dependencies]
+llm = ["anthropic"]
+dev = ["pytest"]
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["oversight_audit"]
